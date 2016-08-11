@@ -1,6 +1,6 @@
 {
   "name": "rethink-mock",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A mocking library for unit testing rethinkdb with mocha and sinon",
   "main": "lib/rethink-mock",
   "directories": {
