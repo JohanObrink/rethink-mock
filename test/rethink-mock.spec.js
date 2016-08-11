@@ -39,6 +39,9 @@ describe('rethink-mock', () => {
         expect(db.tableDrop, 'db.tableDrop').to.be.a('function')
         expect(db.tableList, 'db.tableList').to.be.a('function')
       })
+      it('exposes table correctly', () => {
+        return r.db('foo').table('bar').run()
+      })
     })
     describe('with db:false', () => {
       it('throws', () => {

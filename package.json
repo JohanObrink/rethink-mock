@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "eslint gulpfile.js lib/**/*.js test/**/*.js && mocha test/**/*.js",
+    "test": "eslint gulpfile.js lib/**/*.js test/**/*.js && mocha test/**/*.spec.js",
     "patch-release": "npm version patch && npm publish && git push origin master --follow-tags",
     "minor-release": "npm version minor && npm publish && git push origin master --follow-tags",
     "major-release": "npm version major && npm publish && git push origin master --follow-tags"
@@ -20,7 +20,6 @@
     "rethinkdb",
     "test",
     "mock",
-    "mocha",
     "sinon"
   ],
   "author": "Johan Öbrink <johan.obrink@gmail.com>",
@@ -39,6 +38,7 @@
     "gulp-eslint": "^3.0.1",
     "gulp-mocha": "^3.0.0",
     "mocha": "^3.0.2",
+    "rethinkdb": "^2.3.2",
     "sinon-chai": "^2.8.0"
   },
   "dependencies": {

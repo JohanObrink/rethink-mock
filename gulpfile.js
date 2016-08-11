@@ -14,7 +14,7 @@ gulp.task('lint', () => {
 })
 
 gulp.task('test', () => {
-  running.test = ['lib/**/*.js', 'test/**/*.js']
+  running.test = ['lib/**/*.js', 'test/**/*.spec.js']
   return gulp.src(running.test[1])
     .pipe(mocha({reporter: 'spec'}))
 })
