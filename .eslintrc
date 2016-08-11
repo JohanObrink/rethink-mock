@@ -1,0 +1,25 @@
+extends: standard
+
+globals:
+  after: true
+  before: true
+  afterEach: true
+  beforeEach: true
+  describe: true
+  it: true
+  context: true
+
+rules:
+  arrow-parens: 0
+  no-unexpected-multiline: 2
+  no-var: 2
+  prefer-const: 2
+  spaced-comment:
+    - 0
+    - never
+    -
+      exceptions:
+        - ":"
+        - "::"
+      markers:
+        - "/*"

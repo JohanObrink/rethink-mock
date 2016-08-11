@@ -1,0 +1,48 @@
+{
+  "name": "rethink-mock",
+  "version": "0.0.0",
+  "description": "A mocking library for unit testing rethinkdb with mocha and sinon",
+  "main": "lib/rethink-mock",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "eslint gulpfile.js lib/**/*.js test/**/*.js && mocha test/**/*.js",
+    "patch-release": "npm version patch && npm publish && git push origin master --follow-tags",
+    "minor-release": "npm version minor && npm publish && git push origin master --follow-tags",
+    "major-release": "npm version major && npm publish && git push origin master --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JohanObrink/rethink-mock.git"
+  },
+  "keywords": [
+    "rethinkdb",
+    "test",
+    "mock",
+    "mocha",
+    "sinon"
+  ],
+  "author": "Johan Öbrink <johan.obrink@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JohanObrink/rethink-mock/issues"
+  },
+  "homepage": "https://github.com/JohanObrink/rethink-mock#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.2.2",
+    "eslint-config-standard": "^5.3.5",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-standard": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-mocha": "^3.0.0",
+    "mocha": "^3.0.2",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "sinon": "^1.17.5",
+    "sinon-as-promised": "^4.0.2"
+  }
+}
